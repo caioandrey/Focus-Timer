@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="">
+    <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer 3.0</title>
+
+    <!-- Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./main.js" defer></script>
+</head>
+<body>
+    <div id="app">
+
+        <div id="timer">
+            <div id="display" class="adjust">
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </div>
+
+            <section id="controls" class="adjust">
+                <button 
+                data-action="toggleRunning" 
+                class="ph ph-play-circle">
+                    <span class="screen-reader">
+                        Iniciar Contador
+                    </span>
+                </button>
+
+                <button 
+                data-action="toggleRunning" 
+                class="ph ph-pause-circle">
+                    <span class="screen-reader">
+                        Pausar Contador
+                    </span>
+                </button>
+
+                <button 
+                data-action="reset"
+                class="ph ph-stop-circle">
+                    <span class="screen-reader">
+                        Parar Contador
+                    </span>
+                </button>
+
+                <button 
+                data-action="increaseTime"
+                class="ph ph-plus-circle">
+                    <span class="screen-reader">
+                        Aumentar 5 minutos
+                    </span>
+                </button>
+
+                <button 
+                data-action="decreaseTime"
+                class="ph ph-minus-circle">
+                    <span class="screen-reader">
+                        Diminuir 5 minutos
+                    </span>
+                </button>
+            
+            </section>
+        </div>
+    
+
+        <div id="sounds">
+            <div id="cards">
+                <button class="forest musicOn">
+                    <img 
+                    class="gif-animation" 
+                    src="./assets/gifs/forest.gif" 
+                    alt="Gif de uma floresta">
+                    <input 
+                    type="range" 
+                    id="ForestVolumeControl" 
+                    min="0" 
+                    max="1" 
+                    step="0.01" 
+                    value="0.5">
+                </button>
+
+                <button class="rain">
+                    <img 
+                    class="gif-animation" 
+                    src="./assets/gifs/rain.gif" 
+                    alt="Gif de uma nuvem chovendo">
+                    <input 
+                    type="range" 
+                    id="RainVolumeControl" 
+                    min="0" 
+                    max="1" 
+                    step="0.01" 
+                    value="0.5">
+                </button>
+
+                <button class="coffee">
+                    <img 
+                    class="gif-animation" 
+                    src="./assets/gifs/coffee.gif" 
+                    alt="Gif de um copo de café">
+                    <input 
+                    type="range" 
+                    id="CoffeeVolumeControl" 
+                    min="0" 
+                    max="1" 
+                    step="0.01" 
+                    value="0.5">
+                </button>
+                    
+                <button class="fire">
+                    <img 
+                    class="gif-animation" 
+                    src="./assets/gifs/fire.gif" 
+                    alt="Gif de um fogueira">
+                    <input 
+                    type="range" 
+                    id="FireVolumeControl" 
+                    min="0" 
+                    max="1" 
+                    step="0.01" 
+                    value="0.5">
+                </button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
