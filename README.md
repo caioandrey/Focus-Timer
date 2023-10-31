@@ -20,9 +20,12 @@ Este projeto foi desenvolvido usando ES Modules. Módulos ES (ECMAScript) são u
 ## 🔖 Deploy
 
 *Click no card desejado para iniciar a música
+</br>
 *Duplo Click no card desejado para parar a música
+</br>
 
 Atualizações de versão serão implementadas no futuro.
+</br>
 Link: 
 
 ## 🚀 Tecnologias
